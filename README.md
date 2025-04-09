@@ -31,18 +31,6 @@ Visualization: Matplotlib, Plotly
 Data Processing: Pandas, NumPy
 
 
-⚙️ Installation
-1.Clone this repo
-
-git clone https://github.com/yourusername/stock-prediction-tool.git
-
-2.Install required libraries
-
-pip install -r requirements.txt
-
-3.Run the application
-
-python app.py
 
 
 
