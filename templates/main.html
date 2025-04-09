@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo,
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            color: #387ed1;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #387ed1;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #f2f5fa;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: #1a73e8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .hero button {
+            background-color: #387ed1;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #1a73e8;
+        }
+
+        .image-section {
+            padding: 50px 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+
+        .centered-image {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            padding: 80px 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            color: #387ed1;
+        }
+
+        .feature p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #f2f5fa;
+            padding:
+                20 px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="display:flex; justify-content: space-between; align-items:center;">
+            <div class="logo"><img src="{{url_for('static',filename='zerodha-logo.png')}}" alt="Zerodha Logo">
+                <h1>Zerodha</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/signup">Sign Up</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/">Product</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="image-section">
+        <div class="container"><img src="{{url_for('static',filename='image.png')}}" alt="Dashboard Design"
+                class="centered-image"></div>
+    </section>
+    <section class="hero">
+        <div class="container">
+            <h2>Invest in everything</h2>
+            <p>Online platform to invest in stocks,derivatives,mutual funds,and more.</p><a
+                href="{{url_for('signup')}}"><button>Sign up now</button></a>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Largest stock broker</h3>
+            <p>1M+clients trust us with₹2+lakh crore in equity investments.</p>
+        </div>
+        <div class="feature">
+            <h3>Low brokerage</h3>
+            <p>Free equity investments and flat₹20 intraday trading.</p>
+        </div>
+        <div class="feature">
+            <h3>Technology driven</h3>
+            <p>Built by traders for traders with cutting-edge technology.</p>
+        </div>
+        </section<footer>&copy;2025 Mini Project.All rights reserved.</footer>
+</body>
+
+</html>
